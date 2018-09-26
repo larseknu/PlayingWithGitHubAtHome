@@ -7,11 +7,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private Button goToMovieButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        goToMovieButton = findViewById(R.id.goToMovie);
 
         Button gotoShowsButton = findViewById(R.id.goToShowsButton);
 
@@ -21,5 +25,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(view.getContext(), ShowActivity.class));
             }
         });
+    }
+
+    public void goToMovies(View view) {
+        startActivity(new Intent(this, MovieActivity.class));
     }
 }
