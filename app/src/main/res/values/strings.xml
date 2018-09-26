@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PlayingWithGitHubAtHome</string>
+    <string name="hello_github">Hello GitHub!</string>
+</resources>
